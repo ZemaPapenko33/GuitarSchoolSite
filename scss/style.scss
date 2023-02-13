@@ -22,6 +22,7 @@ html {
 $color-blue: #5290ea;
 $color-orange: #f28b64;
 $color-grey: #e2e2e2;
+
 * {
   box-sizing: border-box;
 }
@@ -368,13 +369,14 @@ body {
 }
 
 .footer {
+  background: #f0f0f0;
   &__img {
     position: absolute;
     left: -250px;
     bottom: 0;
   }
   &__container {
-    min-height: 272px;
+    min-height: 285px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -383,7 +385,49 @@ body {
     margin-bottom: 20px;
   }
 }
+.carousel-inner {
+  text-align: center;
+  min-height: 500px;
+}
+.container-fluid {
+  padding: 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
 
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: $color-orange;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    overflow: hidden;
+    img {
+      width: 400px;
+      height: 200px;
+    }
+  }
+  &__title {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    width: 550px;
+    font-size: 25px;
+    color: #000000;
+    span {
+      font-size: 50px;
+    }
+  }
+}
 // малый комп или горизонтальный планшет
 @media (max-width: 1199px) {
   .container {
@@ -1020,7 +1064,7 @@ body {
       margin-bottom: 10px;
     }
     &__container {
-      min-height: 100px;
+      min-height: 130px;
     }
     &__container {
       display: flex;
@@ -1048,5 +1092,48 @@ body {
     top: 218px;
     left: 15px;
     width: 151px;
+  }
+  .carousel-inner {
+    text-align: center;
+    min-height: 500px;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+    &__avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      width: 150px;
+      background-color: $color-orange;
+      border-radius: 50%;
+      margin-bottom: 25px;
+      overflow: hidden;
+      img {
+        width: 400px;
+        height: 200px;
+      }
+    }
+    &__title {
+      color: black;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      width: 200px;
+      font-size: 15px;
+      color: #000000;
+      span {
+        font-size: 50px;
+      }
+    }
   }
 }

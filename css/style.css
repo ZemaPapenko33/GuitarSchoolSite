@@ -806,19 +806,67 @@ body {
   bottom: 75px;
 }
 
+.footer {
+  background: #f0f0f0;
+}
 .footer__img {
   position: absolute;
   left: -250px;
   bottom: 0;
 }
 .footer__container {
-  min-height: 272px;
+  min-height: 285px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 .footer__title {
   margin-bottom: 20px;
+}
+
+.carousel-inner {
+  text-align: center;
+  min-height: 500px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.content__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: #f28b64;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.content__avatar img {
+  width: 400px;
+  height: 200px;
+}
+.content__title {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.content__text {
+  width: 550px;
+  font-size: 25px;
+  color: #000000;
+}
+.content__text span {
+  font-size: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -1426,7 +1474,7 @@ body {
     margin-bottom: 10px;
   }
   .footer__container {
-    min-height: 100px;
+    min-height: 130px;
   }
   .footer__container {
     display: flex;
@@ -1453,5 +1501,47 @@ body {
     top: 218px;
     left: 15px;
     width: 151px;
+  }
+  .carousel-inner {
+    text-align: center;
+    min-height: 500px;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .content__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: #f28b64;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+  .content__avatar img {
+    width: 400px;
+    height: 200px;
+  }
+  .content__title {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .content__text {
+    width: 200px;
+    font-size: 15px;
+    color: #000000;
+  }
+  .content__text span {
+    font-size: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
